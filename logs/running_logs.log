@@ -362,3 +362,57 @@ AttributeError: 'ConfigurationManager' object has no attribute 'param'
 [2024-02-27 17:57:32,603: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
 
 x==========x]
+[2024-02-29 17:29:17,308: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-02-29 17:29:17,314: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-02-29 17:29:17,316: INFO: common: created directory at: artifacts]
+[2024-02-29 17:29:17,317: INFO: common: created directory at: artifacts/training]
+[2024-02-29 17:30:52,715: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-02-29 17:30:52,718: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-02-29 17:30:52,719: INFO: common: created directory at: artifacts]
+[2024-02-29 17:30:52,720: INFO: common: created directory at: artifacts/training]
+[2024-02-29 17:31:59,002: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-02-29 17:31:59,006: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-02-29 17:31:59,006: INFO: common: created directory at: artifacts]
+[2024-02-29 17:31:59,007: INFO: common: created directory at: artifacts/training]
+[2024-03-01 10:38:49,406: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-03-01 10:38:49,408: ERROR: main: DataIngestion.__init__() missing 1 required positional argument: 'config']
+Traceback (most recent call last):
+  File "/home/borno/Desktop/classifier/main.py", line 14, in <module>
+    obj = DataIngestion()
+TypeError: DataIngestion.__init__() missing 1 required positional argument: 'config'
+[2024-03-01 10:40:56,244: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-03-01 10:40:56,246: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-03-01 10:40:56,248: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-01 10:40:56,248: INFO: common: created directory at: artifacts]
+[2024-03-01 10:40:56,248: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-03-01 10:40:56,249: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1qGme1J9CkW4lMwzjOhE7OopEKM1iEVDR/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-03-01 10:41:08,319: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1qGme1J9CkW4lMwzjOhE7OopEKM1iEVDR/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-03-01 10:41:08,688: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-03-01 10:41:08,688: INFO: main: *******************]
+[2024-03-01 10:41:08,688: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2024-03-01 10:41:08,689: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-03-01 10:41:08,690: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-01 10:41:08,691: INFO: common: created directory at: artifacts]
+[2024-03-01 10:41:08,691: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-03-01 10:41:09,287: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-03-01 10:41:11,757: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-03-01 10:41:11,757: INFO: main: *******************]
+[2024-03-01 10:41:11,758: INFO: main: >>>>>> stage Training started <<<<<<]
+[2024-03-01 10:41:11,759: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-03-01 10:41:11,760: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-01 10:41:11,760: INFO: common: created directory at: artifacts]
+[2024-03-01 10:41:11,761: INFO: common: created directory at: artifacts/training]
+[2024-03-01 10:44:34,395: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2024-03-01 10:44:34,400: INFO: main: *******************]
+[2024-03-01 10:44:34,400: INFO: main: >>>>>> stage Evaluation stage started <<<<<<]
+[2024-03-01 10:44:34,401: ERROR: main: name 'EvaluationPipeline' is not defined]
+Traceback (most recent call last):
+  File "/home/borno/Desktop/classifier/main.py", line 56, in <module>
+    model_evalution = EvaluationPipeline()
+NameError: name 'EvaluationPipeline' is not defined
